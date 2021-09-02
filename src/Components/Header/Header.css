@@ -1,0 +1,26 @@
+.header{
+    max-width: 768px;
+    min-width: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vw;
+    background-color: turquoise;
+}
+
+.iconBar{
+    width: 2vw;
+}
+
+.iconP{
+    color: gold;
+    font-size: 55px;
+    font-weight:bolder;
+
+}
+
+.iconCart{
+    width: 3vw;
+
+}
