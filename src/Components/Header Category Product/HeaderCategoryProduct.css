@@ -1,0 +1,11 @@
+.containerHeaderCategory{
+    max-width: 768px;
+    min-width: 320px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: honeydew;
+
+}
