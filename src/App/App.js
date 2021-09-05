@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Banner from "../Components/Banner/Banner";
 import ProductList from "../Components/Container products/ProductList";
 import HeaderCategoryProduct from "../Components/Header Category Product/HeaderCategoryProduct";

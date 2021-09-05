@@ -8,6 +8,7 @@
     align-items: center;
     background-color: honeydew;
     height: 4vw;
+    margin-top: -10px;
 
 }
 .buttonCategory{
@@ -15,7 +16,10 @@
     background-color:honeydew;
     height: 100%;
     width: 20%;
+    font-weight: 600;
+    font-size: medium;
 }
 .buttonCategory:hover{
-    background-color: chocolate;
+    background-color: #DFDDA7;
+    cursor: pointer;
 }
