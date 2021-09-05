@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./HeaderCategoryProduct.css";
 import Test_Data from "../Data/Test_Data.json";
+import { AppContext } from "../../Context/AppContext";
 
 // En esta función vamos a filtrar las Categorías a mostrar considerando todas las condiciones
 export default function HeaderCategoryProduct() {
+  const { catActiva, setCatActiva } = useContext(AppContext);
+
   // Transformamos a Array las Categorías y Productos desde el JSON
   let categorias = Object.values(Test_Data.Categorias);
   let productos = Object.values(Test_Data.Productos);
@@ -25,11 +28,26 @@ export default function HeaderCategoryProduct() {
   );
 
   // En este momento mapeamos y renderizamos las Categorías finales
-  let categoriasMapeadas = categoriasFinal.map((c) => <p>{c.nombreCat}</p>);
+  let categoriasMapeadas = categoriasFinal.map((c) => (
+    <button
+      className="buttonCategory"
+      onClick={function (e) {
+        setCatActiva(c.idCategoria);
+      }}
+      value={catActiva}
+    >
+      {c.nombreCat.toUpperCase()}
+    </button>
+  ));
+
+  // Seleccionamos la primer categoría a visualizar
+  if (catActiva === 0) {
+    setCatActiva(categoriasFinal[0].idCategoria);
+  }
 
   return (
     <>
-      <h1>{categoriasMapeadas}</h1>
+      <div className="containerHeaderCategory">{categoriasMapeadas}</div>
     </>
   );
 }

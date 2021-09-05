@@ -7,5 +7,15 @@
     justify-content: space-around;
     align-items: center;
     background-color: honeydew;
+    height: 4vw;
 
+}
+.buttonCategory{
+    border: none;
+    background-color:honeydew;
+    height: 100%;
+    width: 20%;
+}
+.buttonCategory:hover{
+    background-color: chocolate;
 }

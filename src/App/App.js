@@ -1,16 +1,21 @@
+import React from "react";
+import ReactDOM from "react-dom";
 import Banner from "../Components/Banner/Banner";
-import ComponentRecyclable from "../Components/Container products/ComponentRecyclable";
+import ProductList from "../Components/Container products/ProductList";
 import HeaderCategoryProduct from "../Components/Header Category Product/HeaderCategoryProduct";
 import Header from "../Components/Header/Header";
 import "./App.css";
+import { AppProvider } from "../Context/AppContext";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <HeaderCategoryProduct />
-      <ComponentRecyclable />
+      <AppProvider>
+        <Header />
+        <Banner />
+        <HeaderCategoryProduct />
+        <ProductList />
+      </AppProvider>
     </div>
   );
 }
