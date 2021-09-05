@@ -17,6 +17,7 @@
 .ImagenDeProducto{
    width: 100%;
    height: 100%; 
+   border-radius: 15px;
    
 }
 .containerInfoProduct{
@@ -64,4 +65,45 @@ background-color: #C384D8;
    color:cornsilk;
    font-weight: 400;
    font-weight: bolder;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+   .containerProduct{
+      flex-direction: column;
+      height: 400px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      /* margin: 0; */
+   }
+   .containerImageProduct{
+      width: 40%;
+      height: 30%;
+      margin-bottom: 30%;
+      
+   }
+   .containerInfoProduct{
+      width: 50%;
+      padding: 0;
+      
+
+   }
+   .ImagenDeProducto{
+      border-radius: 15px;
+   }
+   .priceProduct{
+      height: 5vw;
+   }
+   .containerButtonProduct{
+      width: 50%;
+     
+   }
+   .buttonProduct{
+      width: 50%;
+      height: 50%;
+      font-size: 5vw;
+   }
+   .iconButtonProduct{
+      width: 15px;
+   }
 }

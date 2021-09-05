@@ -24,3 +24,11 @@
     width: 3vw;
 
 }
+@media screen and (min-width:320px) and (max-width:768px) {
+    .header{
+        height: 70px;
+    }
+    .iconBar, .iconCart{
+        width: 30px;
+    }
+}
