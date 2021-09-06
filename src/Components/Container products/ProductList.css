@@ -69,39 +69,51 @@ background-color: #C384D8;
 
 @media screen and (min-width:320px) and (max-width:768px) {
    .containerProduct{
-      flex-direction: column;
-      height: 400px;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      /* margin: 0; */
+      height: 130px;
+      font-size: small;
    }
    .containerImageProduct{
-      width: 40%;
-      height: 30%;
-      margin-bottom: 30%;
-      
-   }
-   .containerInfoProduct{
-      width: 50%;
-      padding: 0;
-      
-
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0;
    }
    .ImagenDeProducto{
+      width: 100%;
       border-radius: 15px;
+      height: 100%;
+      border-radius: 0;
+
+   }
+   .containerInfoProduct{
+      width: 40%;
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+      height: 100%;
+      font-size: 10px;
+   }
+   .containerInfoProduct h2,.containerInfoProduct p{
+      margin: 0;
    }
    .priceProduct{
       height: 5vw;
    }
    .containerButtonProduct{
-      width: 50%;
+      width: 25%;
+      height: 100%;
+      justify-content: center;
+      align-content: center;
+      padding: 0;
      
    }
    .buttonProduct{
       width: 50%;
       height: 50%;
       font-size: 5vw;
+      border-radius: 0;
    }
    .iconButtonProduct{
       width: 15px;

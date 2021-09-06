@@ -27,8 +27,8 @@ export default function ProductList() {
         />
       </div>
       <div className="containerInfoProduct">
-        <h2> {producto.nombreProducto}</h2>
-        <p>{producto.descriProducto}</p>
+        <h2> {producto.nombreProducto.toUpperCase()}</h2>
+        <p>{producto.descriProducto.toUpperCase()}</p>
 
         <div className="priceProduct">
           $
