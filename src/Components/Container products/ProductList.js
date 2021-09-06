@@ -38,8 +38,8 @@ export default function ProductList() {
         </div>
       </div>
       <div className="containerButtonProduct">
-        <button className="buttonProduct">+</button>
         <button className="buttonProduct">-</button>
+        <button className="buttonProduct">+</button>
         <button className="buttonProduct">
           <img src={heart} alt="button heart" className="iconButtonProduct" />
         </button>
