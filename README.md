@@ -1,3 +1,36 @@
+# README - Test Desarrollo Pide - Rocio Marquesin
+
+TECNOLOGÍAS
+Para desarrollar esta aplicación utilicé:
+- React Js
+- npm
+- HTML 5
+- CSS 3
+- Archivo JSON provisto por la empresa
+
+DESCRIPCIÓN DE LA APLICACIÓN
+1. Al iniciar la aplicación lee el JSON provisto
+
+2. Del mismo se obtienen la imagen del header, las categorías y los productos
+	2.1. Para obtener las categorías primero filtro las que son hijas de la categoría padre (Comida=1). Esto lo hice únicamente porque tenía que desarrollar solo la parte de productos, si estuviese desarrollando la aplicación entera esto se tomaría automáticamente.
+	
+	2.2. Luego también incluí las categorías nietas y por último solo muestro las categorías que tienen al menos 1 producto con status=true.
+
+3. Los productos se van filtrando a medida que se seleccionan las categorías. Esto se hace utilizando un contexto global a través de useContext.
+	3.1. A su vez el precio que se muestra de los productos varía si el mismo está en oferta o no.
+
+4. Cuenta con una versión responsive. Los breakpoints utilizados son:
+	- 320px - mobile
+	- 768px - tablet
+	- 1024px - laptop
+
+5. Para el diseño intenté emular el video provisto.
+
+6. La estructura de carpetas sigue un principio de jerarquía que busca optimizar la escalabilidad de la aplicación.
+
+# INSTALACIÓN
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
